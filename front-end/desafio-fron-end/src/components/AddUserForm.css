@@ -1,0 +1,65 @@
+.containerInput {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 15px;
+  margin: 34px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input,
+.containerInput select {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  margin-right: 8px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.containerInput select {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.containerInput select:focus {
+  color: #fff;
+}
+
+.containerInput option {
+  color: #000;
+}
+
+.containerInput input::placeholder {
+  color: #f1f1f1;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #f1f1f1;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding-block: 8px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.button:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.button:focus {
+  transform: scale(0.95);
+}

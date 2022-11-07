@@ -1,0 +1,14 @@
+.headerContainer {
+  font-size: 65px;
+  color: #fff;
+  animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
