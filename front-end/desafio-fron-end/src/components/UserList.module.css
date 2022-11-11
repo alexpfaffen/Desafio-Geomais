@@ -1,3 +1,6 @@
 table {
   width: 100%;
 }
+.ant-pagination-prev {
+  width: 32px;
+}

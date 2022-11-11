@@ -1,4 +1,13 @@
-.containerInput {
+.addUserForm {
+  max-width: 600px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.leftCadastro {
+}
+
+.rightCadastro {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -6,12 +15,12 @@
   padding: 15px;
   margin: 34px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(53, 59, 64, 1);
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.containerInput input,
-.containerInput select {
+.rightCadastro input,
+.rightCadastro select {
   font-size: 20px;
   color: #fff;
   background-color: transparent;
@@ -19,21 +28,22 @@
   outline: none;
   margin-right: 8px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-left: 6px;
 }
 
-.containerInput select {
+.rightCadastro select {
   color: rgba(255, 255, 255, 0.55);
 }
 
-.containerInput select:focus {
+.rightCadastro select:focus {
   color: #fff;
 }
 
-.containerInput option {
+.rightCadastro option {
   color: #000;
 }
 
-.containerInput input::placeholder {
+.rightCadastro input::placeholder {
   color: #f1f1f1;
 }
 
@@ -46,17 +56,21 @@
   font-weight: bold;
 
   color: #f1f1f1;
-  background-color: transparent;
+  background-color: #2ea35d;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   padding-block: 8px;
   cursor: pointer;
   transition: transform 0.5s;
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
 }
 
 .button:hover {
-  color: rgba(0, 0, 0, 0.8);
+  /* color: rgba(0, 0, 0, 0.8); */
   background-color: #fff;
+  color: #2ea35d;
   transition: 0.3s;
 }
 

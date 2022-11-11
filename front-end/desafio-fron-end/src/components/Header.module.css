@@ -1,6 +1,24 @@
 .headerContainer {
-  font-size: 65px;
-  color: #fff;
+  margin-inline: auto;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.headerCadastro {
+  font-size: 40px;
+  color: #4262aa;
+  text-align: center;
+  font-weight: 600;
+  animation: flipTitle 2s;
+}
+
+.imgCadastro {
+  margin-block: auto;
+}
+
+.headerContainer img {
+  width: 100%;
   animation: flipTitle 2s;
 }
 

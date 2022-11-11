@@ -36,7 +36,7 @@ export function UserList({ userList }) {
   ];
 
   return (
-    <div styles={styles}>
+    <div>
       <Table columns={columns} dataSource={userList}></Table>
     </div>
   );

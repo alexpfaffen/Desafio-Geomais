@@ -1,11 +1,10 @@
 import { UserList } from "./UserList";
 import { AddUserForm } from "./AddUserForm";
 import { useEffect, useState } from "react";
-
 import { api } from "../services/api";
 
 export function Main() {
-  const [userList, setUserList] = useState("");
+  const [userList, setUserList] = useState([]);
   useEffect(() => {
     const dataFetch = async () => {
       const response = await api.get("/pessoas");
@@ -23,7 +22,7 @@ export function Main() {
 
   return (
     <div>
-      <AddUserForm comprimentoDaLista={userList} criarUsuario={criarUsuario} />
+      <AddUserForm criarUsuario={criarUsuario} />
       <UserList userList={userList} />
     </div>
   );
